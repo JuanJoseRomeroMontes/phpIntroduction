@@ -1,5 +1,4 @@
 <?php
-
 $data = file_get_contents("roomsData.json");
 $rooms = json_decode($data, true);
 ?>
