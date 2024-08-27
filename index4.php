@@ -14,7 +14,7 @@ if(!empty($filteredRoomList)){
 <?php
     if($roomFound){
         echo (
-            "<h1>Rooms</h1>
+            "<h1>Room</h1>
             <ul>
                 <li>Id: $filteredRoom[id]</li>
                 <li>Name: $filteredRoom[roomType]</li>

@@ -13,7 +13,7 @@ $query =   "SELECT roomNumber, price, discount, room_type.roomType
 $result = $mysqli -> query($query);
 $rooms = [];
 //Convert results to array
-while($row = mysqli_fetch_array($result))
+while($row = $result->fetch_assoc())
 {
     $rooms[] = $row;
 }
