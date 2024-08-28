@@ -1,5 +1,5 @@
 <?php
-$search = $_GET['search'];
+$search = @$_GET['search'];
 $mysqli = new mysqli("localhost","miranda","mirapass","miranda_schema");
 
 if ($mysqli -> connect_errno) {
@@ -36,7 +36,7 @@ $mysqli -> close();
 
 $roomCount = count($rooms);
 $normalHeader = "<h1>Rooms</h1>";
-$searchHeader = "<h1>$roomCount results</h1> <a href=''>Full list</a>";
+$searchHeader = "<h1>$roomCount results</h1> <a href='index7.php'>Full list</a>";
 ?>
 
 <?= empty($search) ? $normalHeader : $searchHeader ?>
